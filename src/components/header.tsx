@@ -1,26 +1,26 @@
 "use client";
 import { Menu } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import MobileMenu from "./mobilemenu";
-import Image from "next/image";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div id="wrapper" className="">
       <div id="headercontainer" className="flex justify-between">
-      <div className=" rounded-sm m-5">
-  <Link href="/">
-    <Image
-      src="/logo.svg"
-      width={500}
-      height={500}
-      alt="logo"
-      className="h-[150px] w-[150px] m-5 rounded-md"
-    />
-  </Link>
-</div>
+        <div className=" rounded-sm m-5">
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              width={500}
+              height={500}
+              alt="logo"
+              className="h-[150px] w-[150px] rounded-sm"
+            />
+          </Link>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
