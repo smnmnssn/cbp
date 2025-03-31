@@ -34,9 +34,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         onClick={onClose}
         className="flex flex-col items-center mb-8"
       >
-        <h1 className="text-red-600 font-bold text-2xl underline">
-          Mölndals City Bil & Plåt
-        </h1>
+        <Image
+          src="/logo.svg"
+          width={500}
+          height={500}
+          alt="logo"
+          className="h-[150px] w-[150px] rounded-sm"
+        />
       </Link>
 
       {/* Navigation links */}

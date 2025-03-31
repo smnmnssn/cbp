@@ -4,10 +4,7 @@ import FadeInSection from "./useinview";
 
 export default function Banner1() {
   return (
-    <div
-      id="wrapper"
-      className=""
-    >
+    <div id="wrapper" className="">
       <div className=" ">
         <FadeInSection>
           <div className="text-center flex flex-col items-center p-5 m-3 bg-white rounded-sm shadow-2xl ">
@@ -18,6 +15,10 @@ export default function Banner1() {
               Vi är ett familjeföretag som i över 20 år har hjälpt tusentals
               nöjda kunder med alla typer av plåt-, lack- och plastreparationer.
             </p>{" "}
+            <p className="text-xl md:w-[40%] rounded-sm p-3 ">
+              Vi har avtal med alla större försäkringsbolag och kan därför ta
+              emot i stort sett alla skador och kunder.
+            </p>
             <div>
               <Image
                 src="/spraying.webp"
@@ -53,13 +54,6 @@ export default function Banner1() {
                 alt="employee"
                 className="rounded-sm mx-auto mt-5 mb-5 shadow-xl"
               ></Image>
-              <p
-                className="text-lg"
-              >
-                Vi har avtal med alla större
-                försäkringsbolag och kan därför ta emot i stort sett alla skador
-                och kunder.
-              </p>
               {/* <Image
                 src="/overview.webp"
                 width={500}

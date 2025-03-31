@@ -6,7 +6,7 @@ import FadeInSection from "./useinview";
 export default function Contact() {
   return (
     <FadeInSection>
-    <div id="contact" className="scroll-mt-10 text-red-500 ">
+    <div id="contact" className="scroll-mt-10 ">
       <div className="p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl">
         <div className="">
           <div className="flex-col text-center">
