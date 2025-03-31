@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="">
       <FadeInSection>
         <div
-          className="relative w-full bg-cover bg-center h-[450px] md:h-[600px]"
+          className="relative w-full bg-cover bg-center h-[450px] md:h-[800px]"
           style={{
             backgroundImage: "url('/bgstock.webp')",
           }}
@@ -23,13 +23,13 @@ export default function HeroSection() {
           <FadeInSection>
             <div className="relative text-white flex justify-center place-items-center text-center">
               <div className="w-xs  text-xl md:w-xl md:text-4xl flex flex-col items-center">
-                <h2 className="mb-3 opacity-90 p-3 font-sans font-bold text-2xl">
+                <h2 className="mb-3 opacity-90 p-3 font-sans font-bold text-2xl md:text-5xl md:w-4xl">
                   Vi tar hand om alla typer av plåt-, lack- och plastreparationer
                 </h2>
 
                 <div className="flex flex-col w-[100px] items-center font-bold">
                   <Link href="#Kontakt">
-                    <button className="cursor-pointer bg-red-500 w-fit px-4 pt-2.5 py-2 rounded-sm">
+                    <button className="cursor-pointer bg-red-500 w-fit px-4 pt-2.5 py-2 rounded-sm md:text-2xl md:mt-10">
                       KONTAKT
                     </button>
                   </Link>

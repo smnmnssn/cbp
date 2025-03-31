@@ -1,4 +1,4 @@
-"use client";
+
 
 import Image from "next/image";
 
@@ -41,7 +41,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           width={500}
           height={500}
           alt="logo"
-          className="h-[150px] w-[150px] rounded-sm"
+          className="h-[150px] w-[150px] md:h-[300px] md:w-[300px] rounded-sm"
         />
       </a>
 
@@ -52,7 +52,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             key={label}
             href={path}
             onClick={onClose}
-            className="text-black text-xl hover:text-gray-400"
+            className="text-black text-xl md:text-4xl hover:text-gray-400"
           >
             {label}
           </a>

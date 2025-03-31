@@ -7,11 +7,11 @@ export default function Contact() {
   return (
     <FadeInSection>
     <div id="Kontakt" className="scroll-mt-10 ">
-      <div className="p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl">
-        <div className="">
+      <div className="p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl md:flex md:items-center md:justify-center">
+        <div className="md:grid md:grid-cols-2">
           <div className="flex-col text-center">
-            <FaClock className="text-red-500 size-13 mx-auto mb-3" />
-            <ul className=" list-inside font-bold mb-5 text-xl">
+            <FaClock className="text-red-500 size-13 md:size-20 mx-auto mb-3" />
+            <ul className=" list-inside font-bold mb-5 text-xl md:text-3xl">
               <li>Måndag 07-17 </li>
               <li>Tisdag 07-17</li>
               <li>Onsdag 07-17</li>
@@ -20,19 +20,19 @@ export default function Contact() {
             </ul>
           </div>
           <div className="flex-col text-center mb-5">
-            <BsFillTelephoneFill className="text-red-500 size-13 mx-auto mb-3" />
+            <BsFillTelephoneFill className="text-red-500 size-13 md:size-20 mx-auto mb-3 md:mb-16" />
 
-            <p className="font-bold text-2xl">031-15 52 10</p>
+            <p className="font-bold text-2xl md:text-4xl">031-15 52 10</p>
           </div>
           <div className="flex-col text-center mb-5">
-            <MdAlternateEmail className="text-red-500 size-13 mx-auto mb-3" />
+            <MdAlternateEmail className="text-red-500 size-13 md:size-20 mx-auto mb-3" />
 
-            <p className="font-bold text-2xl"> info@cbp.se</p>
+            <p className="font-bold text-2xl md:text-3xl"> info@cbp.se</p>
           </div>
 
           <div className="flex-col text-center mb-5 ">
-            <FaMapMarkerAlt className="text-red-500 size-13 mx-auto mb-3" />
-            <p className="font-bold mb-3 text-xl">
+            <FaMapMarkerAlt className="text-red-500 size-13 md:size-20 mx-auto mb-3" />
+            <p className="font-bold mb-3 text-xl md:text-3xl">
               Bangårdsvägen 8, 428 35 Kållered
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function Contact() {
             width="600"
             height="450"
             loading="lazy"
-            className="w-full rounded-sm"
+            className="w-full md:w-[600px] md:ml-25 rounded-sm"
           ></iframe>
         </div>
       </div>

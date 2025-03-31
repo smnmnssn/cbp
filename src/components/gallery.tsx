@@ -22,12 +22,12 @@ export default function Gallery() {
         id="Galleri"
         className="text-center flex flex-col items-center p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl"
       >
-        <FaImage className="text-red-500 size-20 mx-auto mb-3" />
-        <h1 className="text-5xl font-bold text-center mb-5 text-red-500">
+        <FaImage className="text-red-500 size-20 md:size-30 mx-auto mb-3" />
+        <h1 className="text-5xl md:text-6xl font-bold text-center mb-5 md:mb-15 text-red-500">
           Galleri
         </h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:w-[80%] gap-4 w-full">
           {images.map((src, index) => (
             <div
               key={index}

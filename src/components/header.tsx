@@ -17,17 +17,17 @@ export default function Header() {
               width={500}
               height={500}
               alt="logo"
-              className="h-[150px] w-[150px] rounded-sm"
+              className="h-[150px] w-[150px] rounded-sm md:h-[300px] md:w-[300px]"
             />
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className=" text-red-500 mr-5"
+          className=" text-red-500 mr-5 md:mr-20"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <Menu /> : <Menu  size={30}/>}
+          {isMenuOpen ? <Menu /> : <Menu className="size-8 -mt-8 md:size-14"/>}
         </button>
         <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       </div>
