@@ -9,7 +9,7 @@ export default function Partners() {
     >
       <div className=" ">
         <FadeInSection>
-          <div className="text-center flex flex-col items-center p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl ">
+          <div id="Partners" className="text-center flex flex-col items-center p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl ">
             <FaHandshake className="text-red-500 size-20 mx-auto mb-3" />
             <h1 className="text-4xl md:text-5xl font-bold text-red-500 mb-8">
               Partners

@@ -13,8 +13,8 @@ export default function Home() {
       {/* <Header /> */}
       <Hero />
       <Banner1 />
-      <Gallery />
       <QualityPolicy />
+      <Gallery />
       <Contact />
       <Partners />
       <Footer />

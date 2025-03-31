@@ -8,7 +8,7 @@ export default function Banner1() {
       <div className=" ">
         <FadeInSection>
           <div className="text-center flex flex-col items-center p-5 m-3 bg-white rounded-sm shadow-2xl ">
-            <h1 className="text-3xl md:text-5xl font-bold text-red-500">
+            <h1 className="text-4xl md:text-5xl font-bold text-red-500">
               Välkommen till Mölndals City Bil & Plåt
             </h1>
             <p className="mt-4 text-xl md:w-[40%] rounded-sm p-3 ">

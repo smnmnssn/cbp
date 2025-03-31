@@ -6,10 +6,10 @@ import FadeInSection from "./useinview";
 export default function QualityPolicy() {
   return (
     <FadeInSection>
-    <div className="p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl">
+    <div id="Kvalitetspolicy" className="p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl">
       <IoShieldCheckmark className="text-red-500 size-20 mx-auto mb-3" />
 
-      <h1 className="text-3xl font-bold text-center mb-5 text-red-500">Kvalitetspolicy</h1>
+      <h1 className="text-4xl font-bold text-center mb-5 text-red-500">Kvalitetspolicy</h1>
 
       <ul className="text-lg">
         <li className="mb-3 flex items-start">

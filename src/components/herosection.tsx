@@ -28,8 +28,8 @@ export default function HeroSection() {
                 </h2>
 
                 <div className="flex flex-col w-[100px] items-center font-bold">
-                  <Link href="#contact">
-                    <button className="cursor-pointer bg-red-500 w-fit px-3 py-1 rounded-sm">
+                  <Link href="#Kontakt">
+                    <button className="cursor-pointer bg-red-500 w-fit px-4 pt-2.5 py-2 rounded-sm">
                       KONTAKT
                     </button>
                   </Link>

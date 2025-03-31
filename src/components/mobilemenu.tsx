@@ -1,26 +1,28 @@
-"use client"; // Ensures the component runs on the client side
+"use client";
 
 import Image from "next/image";
-import Link from "next/link"; // Import Next.js Link for navigation
-import { usePathname } from "next/navigation"; // Get the current route
-// Define the props for the MobileMenu component
+
+// Props för MobileMenu
 interface MobileMenuProps {
-  isOpen: boolean; // Controls whether the menu is visible
-  onClose: () => void; // Function to close the menu
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-// Mobile navigation menu component
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
-  const pathname = usePathname(); // Get the current page path
+  const menuItems = [
+    { label: "Kontakt", path: "#Kontakt" },
+    { label: "Kvalitetspolicy", path: "#Kvalitetspolicy" },
+    { label: "Galleri", path: "#Galleri" },
+    { label: "Partners", path: "#Partners" },
+  ];
 
   return (
     <div
-      // Mobile menu container, sliding in when isOpen is true
       className={`fixed top-0 left-0 w-full h-full bg-white bg-opacity-95 z-50 
-                flex flex-col items-center justify-center transition-transform duration-300 
-                ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+                  flex flex-col items-center justify-center transition-transform duration-300 
+                  ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
     >
-      {/* Close button (×) in the top-right corner */}
+      {/* Stäng-knapp */}
       <button
         className="absolute top-5 right-5 text-black text-6xl"
         onClick={onClose}
@@ -28,9 +30,9 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         ×
       </button>
 
-      {/* Logo section - clicking it closes the menu */}
-      <Link
-        href="/"
+      {/* Logo (klick stänger meny och scrollar till toppen) */}
+      <a
+        href="#"
         onClick={onClose}
         className="flex flex-col items-center mb-8"
       >
@@ -41,30 +43,20 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           alt="logo"
           className="h-[150px] w-[150px] rounded-sm"
         />
-      </Link>
+      </a>
 
-      {/* Navigation links */}
+      {/* Menylänkar */}
       <nav className="flex flex-col gap-6 text-center">
-        {["KONTAKT", "PARTNERS"].map((item) => {
-          const linkPath = `/${item === "home" ? "" : item}`; // Set home to "/"
-          const isActive = pathname === linkPath; // Check if the link is active
-
-          return (
-            <Link
-              key={item} // Unique key for React list rendering
-              href={linkPath} // Navigation path
-              className={`text-black text-xl hover:text-gray-400 
-                                ${
-                                  isActive
-                                    ? "font-bold border-b-2 border-black"
-                                    : ""
-                                }`}
-              onClick={onClose} // Close the menu when a link is clicked
-            >
-              {item} {/* Display the menu item text */}
-            </Link>
-          );
-        })}
+        {menuItems.map(({ label, path }) => (
+          <a
+            key={label}
+            href={path}
+            onClick={onClose}
+            className="text-black text-xl hover:text-gray-400"
+          >
+            {label}
+          </a>
+        ))}
       </nav>
     </div>
   );
