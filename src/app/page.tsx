@@ -15,8 +15,8 @@ export default function Home() {
       <Banner1 />
       <QualityPolicy />
       <Gallery />
-      <Contact />
       <Partners />
+      <Contact />
       <Footer />
     </div>
   );

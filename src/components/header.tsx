@@ -24,7 +24,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-red-500 mr-5"
+          className=" text-red-500 mr-5"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <Menu /> : <Menu  size={30}/>}

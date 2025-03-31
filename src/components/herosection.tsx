@@ -24,7 +24,7 @@ export default function HeroSection() {
             <div className="relative text-white flex justify-center place-items-center text-center">
               <div className="w-xs  text-xl md:w-xl md:text-4xl flex flex-col items-center">
                 <h2 className="mb-3 opacity-90 p-3 font-sans font-bold text-2xl">
-                  Tar hand om alla typer av plåt-, lack- och plastreparationer
+                  Vi tar hand om alla typer av plåt-, lack- och plastreparationer
                 </h2>
 
                 <div className="flex flex-col w-[100px] items-center font-bold">
