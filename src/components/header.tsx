@@ -1,21 +1,27 @@
 "use client";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import MobileMenu from "./mobilemenu";
-import Link from "next/link";
+import Image from "next/image";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div id="wrapper" className="border border-black">
+    <div id="wrapper" className="">
       <div id="headercontainer" className="flex justify-between">
-      <Link
-        href="/"
-      >
-        <h1 className="text-red-600 font-bold text-2xl">
-          Mölndals City<br/>Bil & Plåt
-        </h1>
-      </Link>
+      <div className=" rounded-sm m-5">
+  <Link href="/">
+    <Image
+      src="/logo.svg"
+      width={500}
+      height={500}
+      alt="logo"
+      className="h-[150px] w-[150px] m-5 rounded-md"
+    />
+  </Link>
+</div>
+
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-black  mr-5"

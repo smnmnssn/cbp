@@ -25,7 +25,7 @@ export default function QualityPolicy() {
         </ul>
       </div>
       <div>
-        <Image src="/smile.webp" width={500} height={500} alt="employee" className="rounded-xl mx-auto">
+        <Image src="/smile.webp" width={500} height={500} alt="smiling employee" className="rounded-xl mx-auto ">
 
         </Image>
       </div>
