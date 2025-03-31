@@ -2,6 +2,7 @@ import Banner1 from "@/components/banner1";
 // import Header from "@/components/header";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import Gallery from "@/components/gallery";
 import Hero from "@/components/herosection";
 import Partners from "@/components/partners";
 import QualityPolicy from "@/components/qualitypolicy";
@@ -12,6 +13,7 @@ export default function Home() {
       {/* <Header /> */}
       <Hero />
       <Banner1 />
+      <Gallery />
       <QualityPolicy />
       <Contact />
       <Partners />

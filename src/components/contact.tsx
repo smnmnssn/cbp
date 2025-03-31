@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="p-5 m-3 mb-5 bg-white rounded-sm shadow-2xl">
         <div className="">
           <div className="flex-col text-center">
-            <FaClock className="text-red-500 size-10 mx-auto mb-3" />
+            <FaClock className="text-red-500 size-13 mx-auto mb-3" />
             <ul className=" list-inside font-bold mb-5 text-xl">
               <li>Måndag 07-17 </li>
               <li>Tisdag 07-17</li>
@@ -20,18 +20,18 @@ export default function Contact() {
             </ul>
           </div>
           <div className="flex-col text-center mb-5">
-            <BsFillTelephoneFill className="text-red-500 size-10 mx-auto mb-3" />
+            <BsFillTelephoneFill className="text-red-500 size-13 mx-auto mb-3" />
 
             <p className="font-bold text-2xl">031-15 52 10</p>
           </div>
           <div className="flex-col text-center mb-5">
-            <MdAlternateEmail className="text-red-500 size-10 mx-auto mb-3" />
+            <MdAlternateEmail className="text-red-500 size-13 mx-auto mb-3" />
 
             <p className="font-bold text-2xl"> info@cbp.se</p>
           </div>
 
           <div className="flex-col text-center mb-5 ">
-            <FaMapMarkerAlt className="text-red-500 size-10 mx-auto mb-3" />
+            <FaMapMarkerAlt className="text-red-500 size-13 mx-auto mb-3" />
             <p className="font-bold mb-3 text-xl">
               Bangårdsvägen 8, 428 35 Kållered
             </p>

@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import Image from "next/image";
+// import Image from "next/image";
 import FadeInSection from "./useinview";
 
 export default function Banner1() {
@@ -20,7 +20,7 @@ export default function Banner1() {
               emot i stort sett alla skador och kunder.
             </p>
             <div>
-              <Image
+              {/* <Image
                 src="/spraying.webp"
                 width={500}
                 height={500}
@@ -53,7 +53,7 @@ export default function Banner1() {
                 height={500}
                 alt="employee"
                 className="rounded-sm mx-auto mt-5 mb-5 shadow-xl"
-              ></Image>
+              ></Image> */}
               {/* <Image
                 src="/overview.webp"
                 width={500}
