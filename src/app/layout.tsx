@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={spartan.className}>
+    <html lang="sv" className={spartan.className}>
       <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
