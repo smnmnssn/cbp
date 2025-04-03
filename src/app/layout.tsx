@@ -4,7 +4,7 @@ import { League_Spartan } from "next/font/google";
 export const metadata = {
   title: "Mölndals City Bil & Plåt | Skadereparationer i Mölndal",
   description: "Vi utför plåt-, lack- och plastreparationer med kvalitet och erfarenhet. Kontakta oss idag.",
-  keywords: ["bilverkstad", "plåt", "lack", "skadereparation", "Mölndal", "cbp.nu", "plåtskada", "krockskada", "buckla", "bucklor", "repa", "repor"],
+  keywords: ["bilverkstad", "plåt", "lack", "skadereparation", "Mölndal", "cbp.nu", "plåtskada", "krockskada", "buckla", "bucklor", "repa", "repor", "fixa rost på bilen", "rostlagning", "laga", "rost", "bilplåtslagare", "billackering"],
   robots: "index, follow", // <-- lägg till detta!
   icons: {
     icon: "/favicon.ico",
